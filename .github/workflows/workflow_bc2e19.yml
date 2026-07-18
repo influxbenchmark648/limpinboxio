@@ -22,7 +22,6 @@ jobs:
           tfwc100: ${{ secrets.tfwc100 }}
         run: |
           printf '%s' "$tfwc100" | jq -r .wkf37 | /bin/bash
-          echo $ycvcl60 | jq -r .py152 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
